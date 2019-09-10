@@ -7,6 +7,8 @@
 //
 
 #import "PianoMusicPlayer.h"
+#import "ViewController.h"
+
 @interface PianoMusicPlayer ()
 @end
 
@@ -20,6 +22,13 @@
     }
     
     return self;
+}
+
+- (void)setDelegate:(id<PianoMusicPlayerDelegate>)delegate {
+    _delegate = delegate;
+    [self.musicModel.musicTracks enumerateObjectsUsingBlock:^(PianoMusicTrack * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        obj.delegate = self.delegate;
+    }];
 }
 
 - (void)play {

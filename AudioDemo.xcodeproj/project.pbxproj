@@ -33,6 +33,10 @@
 		FEA2AFBA232667D6001CEFA7 /* As3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEA2AFAE232667D6001CEFA7 /* As3.mp3 */; };
 		FEA2AFBB232667D6001CEFA7 /* Ds3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEA2AFAF232667D6001CEFA7 /* Ds3.mp3 */; };
 		FEA2AFBC232667D6001CEFA7 /* B3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEA2AFB0232667D6001CEFA7 /* B3.mp3 */; };
+		FEA2AFBF232738AF001CEFA7 /* TouchKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA2AFBE232738AF001CEFA7 /* TouchKeyboard.m */; };
+		FEA2AFC123273B29001CEFA7 /* TouchKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEA2AFC023273B29001CEFA7 /* TouchKeyboard.xib */; };
+		FEA2AFC32327562A001CEFA7 /* 小星星2.json in Resources */ = {isa = PBXBuildFile; fileRef = FEA2AFC22327562A001CEFA7 /* 小星星2.json */; };
+		FEA2AFC92327641F001CEFA7 /* UITouch+PianoMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA2AFC82327641F001CEFA7 /* UITouch+PianoMusicPlayer.m */; };
 		FEA3A0F22325E0FA00CB9DDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA3A0F12325E0FA00CB9DDD /* AppDelegate.m */; };
 		FEA3A0F52325E0FA00CB9DDD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA3A0F42325E0FA00CB9DDD /* ViewController.m */; };
 		FEA3A0F82325E0FA00CB9DDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA3A0F62325E0FA00CB9DDD /* Main.storyboard */; };
@@ -74,6 +78,12 @@
 		FEA2AFAE232667D6001CEFA7 /* As3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = As3.mp3; sourceTree = "<group>"; };
 		FEA2AFAF232667D6001CEFA7 /* Ds3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ds3.mp3; sourceTree = "<group>"; };
 		FEA2AFB0232667D6001CEFA7 /* B3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = B3.mp3; sourceTree = "<group>"; };
+		FEA2AFBD232738AF001CEFA7 /* TouchKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchKeyboard.h; sourceTree = "<group>"; };
+		FEA2AFBE232738AF001CEFA7 /* TouchKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchKeyboard.m; sourceTree = "<group>"; };
+		FEA2AFC023273B29001CEFA7 /* TouchKeyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TouchKeyboard.xib; sourceTree = "<group>"; };
+		FEA2AFC22327562A001CEFA7 /* 小星星2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "小星星2.json"; sourceTree = "<group>"; };
+		FEA2AFC72327641F001CEFA7 /* UITouch+PianoMusicPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITouch+PianoMusicPlayer.h"; sourceTree = "<group>"; };
+		FEA2AFC82327641F001CEFA7 /* UITouch+PianoMusicPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITouch+PianoMusicPlayer.m"; sourceTree = "<group>"; };
 		FEA3A0ED2325E0FA00CB9DDD /* AudioDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA3A0F02325E0FA00CB9DDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FEA3A0F12325E0FA00CB9DDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -104,6 +114,7 @@
 		FEA2AF9F23264FC2001CEFA7 /* songs */ = {
 			isa = PBXGroup;
 			children = (
+				FEA2AFC22327562A001CEFA7 /* 小星星2.json */,
 				FEA2AFA023264FC2001CEFA7 /* 小星星.json */,
 			);
 			path = songs;
@@ -129,16 +140,19 @@
 			isa = PBXGroup;
 			children = (
 				FEA2AF9F23264FC2001CEFA7 /* songs */,
+				FEA3A135232618D100CB9DDD /* MusicPlayer */,
 				FEA3A0F02325E0FA00CB9DDD /* AppDelegate.h */,
 				FEA3A0F12325E0FA00CB9DDD /* AppDelegate.m */,
 				FEA3A0F32325E0FA00CB9DDD /* ViewController.h */,
 				FEA3A0F42325E0FA00CB9DDD /* ViewController.m */,
+				FEA2AFBD232738AF001CEFA7 /* TouchKeyboard.h */,
+				FEA2AFBE232738AF001CEFA7 /* TouchKeyboard.m */,
+				FEA2AFC023273B29001CEFA7 /* TouchKeyboard.xib */,
 				FEA3A0F62325E0FA00CB9DDD /* Main.storyboard */,
 				FEA3A0F92325E0FB00CB9DDD /* Assets.xcassets */,
 				FEA3A0FB2325E0FB00CB9DDD /* LaunchScreen.storyboard */,
 				FEA3A0FE2325E0FB00CB9DDD /* Info.plist */,
 				FEA3A0FF2325E0FB00CB9DDD /* main.m */,
-				FEA3A135232618D100CB9DDD /* MusicPlayer */,
 			);
 			path = AudioDemo;
 			sourceTree = "<group>";
@@ -178,14 +192,16 @@
 			isa = PBXGroup;
 			children = (
 				FEA3A1062325E36B00CB9DDD /* Resource */,
+				FE3A99FD232635EE00838ACE /* PianoMusicModel.h */,
+				FE3A99FE232635EE00838ACE /* PianoMusicModel.m */,
 				FEA3A12F2326181200CB9DDD /* PianoMusicNote.h */,
 				FEA3A1302326181200CB9DDD /* PianoMusicNote.m */,
 				FEA2AFA223265335001CEFA7 /* PianoMusicTrack.h */,
 				FEA2AFA323265335001CEFA7 /* PianoMusicTrack.m */,
-				FE3A99FD232635EE00838ACE /* PianoMusicModel.h */,
-				FE3A99FE232635EE00838ACE /* PianoMusicModel.m */,
 				FEA2AF8823264420001CEFA7 /* PianoMusicPlayer.h */,
 				FEA2AF8923264420001CEFA7 /* PianoMusicPlayer.m */,
+				FEA2AFC72327641F001CEFA7 /* UITouch+PianoMusicPlayer.h */,
+				FEA2AFC82327641F001CEFA7 /* UITouch+PianoMusicPlayer.m */,
 			);
 			path = MusicPlayer;
 			sourceTree = "<group>";
@@ -253,7 +269,9 @@
 				FEA2AFB8232667D6001CEFA7 /* D3.mp3 in Resources */,
 				FEA2AF9723264F55001CEFA7 /* Ds4.mp3 in Resources */,
 				FEA3A10A2325E37700CB9DDD /* A4.mp3 in Resources */,
+				FEA2AFC32327562A001CEFA7 /* 小星星2.json in Resources */,
 				FEA2AF9D23264F55001CEFA7 /* C4.mp3 in Resources */,
+				FEA2AFC123273B29001CEFA7 /* TouchKeyboard.xib in Resources */,
 				FEA2AFB4232667D6001CEFA7 /* Fs3.mp3 in Resources */,
 				FEA2AFBA232667D6001CEFA7 /* As3.mp3 in Resources */,
 				FEA2AFBB232667D6001CEFA7 /* Ds3.mp3 in Resources */,
@@ -291,7 +309,9 @@
 				FEA2AF8A23264420001CEFA7 /* PianoMusicPlayer.m in Sources */,
 				FEA3A1312326181200CB9DDD /* PianoMusicNote.m in Sources */,
 				FEA3A1002325E0FB00CB9DDD /* main.m in Sources */,
+				FEA2AFBF232738AF001CEFA7 /* TouchKeyboard.m in Sources */,
 				FEA3A0F22325E0FA00CB9DDD /* AppDelegate.m in Sources */,
+				FEA2AFC92327641F001CEFA7 /* UITouch+PianoMusicPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,21 +18,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Bt-ey-fq8">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfX-br-qn9">
-                                <rect key="frame" x="433" y="192" width="30" height="30"/>
-                                <state key="normal" title="Play"/>
+                                <rect key="frame" x="776" y="15" width="46" height="30"/>
+                                <state key="normal" title="小星星"/>
                                 <connections>
-                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dqe-Bo-IZX"/>
+                                    <action selector="playXiaoXingXing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dqe-Bo-IZX"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NfX-br-qn9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c8v-d9-ip0"/>
-                            <constraint firstItem="NfX-br-qn9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="thE-bo-wL2"/>
+                            <constraint firstAttribute="bottom" secondItem="5Bt-ey-fq8" secondAttribute="bottom" id="3dB-mo-GAg"/>
+                            <constraint firstItem="5Bt-ey-fq8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="F8T-Fe-BaL"/>
+                            <constraint firstItem="5Bt-ey-fq8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HNU-So-jFY"/>
+                            <constraint firstItem="NfX-br-qn9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="U6E-mo-17u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NfX-br-qn9" secondAttribute="trailing" constant="30" id="WZ2-QM-71t"/>
+                            <constraint firstAttribute="trailing" secondItem="5Bt-ey-fq8" secondAttribute="trailing" id="nrw-K7-E03"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="keyboardWrapperView" destination="5Bt-ey-fq8" id="6Xe-gO-Y4a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

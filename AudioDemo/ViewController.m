@@ -9,9 +9,13 @@
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "PianoMusicPlayer.h"
+#import "TouchKeyboard.h"
 
-@interface ViewController () <AVAudioPlayerDelegate>
+@interface ViewController () <AVAudioPlayerDelegate, PianoMusicPlayerDelegate>
 @property(nonatomic, strong) PianoMusicPlayer *player;
+@property (weak, nonatomic) IBOutlet UIView *keyboardWrapperView;
+
+@property(nonatomic, strong) TouchKeyboard *keyboardView;
 @end
 
 @implementation ViewController {
@@ -19,21 +23,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.keyboardView = [[[NSBundle mainBundle] loadNibNamed:@"TouchKeyboard" owner:nil options:nil] firstObject];
+    [self.keyboardWrapperView addSubview:self.keyboardView];
+    self.keyboardView.frame = self.keyboardWrapperView.bounds;
+    self.keyboardView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    
     NSURL *musicJsonStrFileURL = [[NSBundle mainBundle] URLForResource:@"小星星" withExtension:@"json"];
     NSString *musicJsonStr = [NSString stringWithContentsOfURL:musicJsonStrFileURL encoding:NSUTF8StringEncoding error:nil];
     self.player = [[PianoMusicPlayer alloc] initWithJsonStr:musicJsonStr];
+    self.player.delegate = self;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
 }
 
-- (IBAction)play:(id)sender {
+- (IBAction)playXiaoXingXing:(id)sender {
+
     [self.player play];
 }
 
-- (IBAction)stop:(id)sender {
-    [self.player stop];
+- (void)pianoMusicTrackDidPlayNote:(NSString *)noteName {
+    [self.keyboardView touchNoteName:noteName];
+}
+
+- (void)pianoMusicTrackDidEndPlayNote:(NSString *)noteName {
+    [self.keyboardView untouchNoteName:noteName];
 }
 
 

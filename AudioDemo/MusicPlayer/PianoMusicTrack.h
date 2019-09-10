@@ -11,8 +11,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol PianoMusicTrackDelegate <NSObject>
+- (void)pianoMusicTrackDidPlayNote:(NSString *)noteName;
+- (void)pianoMusicTrackDidEndPlayNote:(NSString *)noteName;
+@end
+
 @interface PianoMusicTrack : NSObject
 @property(nonatomic, strong) NSArray<PianoMusicNote *> *musicNotes;
+@property(nonatomic, weak) id<PianoMusicTrackDelegate> delegate;
 
 - (void)play;
 - (void)pause;

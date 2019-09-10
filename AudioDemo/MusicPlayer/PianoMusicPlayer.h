@@ -10,11 +10,16 @@
 #import "PianoMusicModel.h"
 
 
+@protocol PianoMusicPlayerDelegate <PianoMusicTrackDelegate>
+@end
+
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PianoMusicPlayer : NSObject
 @property(nonatomic, strong, readonly) PianoMusicModel *musicModel;
 
+@property(nonatomic, weak) id<PianoMusicPlayerDelegate> delegate;
 
 - (id)initWithJsonStr:(NSString *)jsonStr;
 

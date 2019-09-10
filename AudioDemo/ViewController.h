@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class AVAudioPlayer;
+@class TouchKeyboard;
 
 @interface ViewController : UIViewController
 

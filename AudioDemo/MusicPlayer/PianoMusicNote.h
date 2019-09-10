@@ -8,11 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+@class PianoMusicNote;
+
 NS_ASSUME_NONNULL_BEGIN
+
+@protocol PianoMusicNoteDelegate <NSObject>
+- (void)pianoMusicNoteDidPlayEnd:(PianoMusicNote *)note;
+@end
 
 @interface PianoMusicNote : NSObject
 @property(nonatomic, strong, readonly) NSString *name;
 @property(nonatomic, assign, readonly) NSTimeInterval duration;
+
+@property(nonatomic, weak) id<PianoMusicNoteDelegate> delegate;
 
 - (id)initWithName:(NSString *)name duration:(NSTimeInterval)duration;
 

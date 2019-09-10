@@ -16,7 +16,7 @@
 @implementation PianoMusicTrack
 
 - (void)play {
-    [self timerFired:nil];
+    [self next];
 }
 
 - (void)pause {
@@ -31,17 +31,30 @@
     self.playIndex = 0;
 }
 
-- (void)timerFired:(NSTimer *)timer {
+- (void)next {
+    // post pre note play end msg
+    if (self.playIndex != 0) {
+        PianoMusicNote *preNote = self.musicNotes[self.playIndex - 1];
+        [preNote stop];
+        if ([self.delegate respondsToSelector:@selector(pianoMusicTrackDidEndPlayNote:)]) {
+            [self.delegate pianoMusicTrackDidEndPlayNote:preNote.name];
+        }
+    }
+
+    // play current note
     PianoMusicNote *note = self.musicNotes[self.playIndex];
     [note play];
-    
+    if ([self.delegate respondsToSelector:@selector(pianoMusicTrackDidPlayNote:)]) {
+        [self.delegate pianoMusicTrackDidPlayNote:note.name];
+    }
+
+    // create current note play end timer
     self.playIndex++;
     if (self.playIndex > self.musicNotes.count - 1) {
         self.playIndex = 0;
     } else {
-        self.timer = [NSTimer timerWithTimeInterval:note.duration target:self selector:@selector(timerFired:) userInfo:nil repeats:false];
+        self.timer = [NSTimer timerWithTimeInterval:note.duration target:self selector:@selector(next) userInfo:nil repeats:false];
         [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
     }
-
 }
 @end
