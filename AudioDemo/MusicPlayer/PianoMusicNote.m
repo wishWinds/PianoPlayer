@@ -53,8 +53,9 @@
 }
 
 - (void)play {
-    [self playWithDuration:self.duration];
-
+    NSLog(@"play: %@, %f", self.name, self.duration);
+    
+    [self.player play];
 }
 
 - (void)playWithDuration:(NSTimeInterval)duration {
@@ -62,7 +63,7 @@
 
     [self.player play];
 
-    if (self.duration > 0) {
+    if (duration > 0) {
         self.timer = [NSTimer timerWithTimeInterval:duration target:self selector:@selector(timerFired:) userInfo:nil repeats:false];
         [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
     }

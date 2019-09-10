@@ -128,7 +128,7 @@
 }
 
 - (void)pianoMusicNoteDidPlayEnd:(PianoMusicNote *)note {
-    [self untouchNoteName:note.name];
+//    [self untouchNoteName:note.name];
     [self.notes removeObject:note];
 }
 

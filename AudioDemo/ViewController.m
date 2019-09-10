@@ -40,6 +40,7 @@
 
 - (IBAction)playXiaoXingXing:(id)sender {
 
+    [self.player stop];
     [self.player play];
 }
 

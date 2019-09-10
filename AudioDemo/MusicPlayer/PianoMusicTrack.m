@@ -35,7 +35,7 @@
     // post pre note play end msg
     if (self.playIndex != 0) {
         PianoMusicNote *preNote = self.musicNotes[self.playIndex - 1];
-        [preNote stop];
+//        [preNote stop];
         if ([self.delegate respondsToSelector:@selector(pianoMusicTrackDidEndPlayNote:)]) {
             [self.delegate pianoMusicTrackDidEndPlayNote:preNote.name];
         }
