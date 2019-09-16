@@ -1,5 +1,5 @@
 //
-//  PianoMusicTrack.h
+//  PianoTrack.h
 //  AudioDemo
 //
 //  Created by 舒鹏 on 9/9/2019.
@@ -7,18 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PianoMusicNote.h"
+#import "PianoNote.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol PianoMusicTrackDelegate <NSObject>
+@protocol PianoTrackDelegate <NSObject>
 - (void)pianoMusicTrackDidPlayNote:(NSString *)noteName;
 - (void)pianoMusicTrackDidEndPlayNote:(NSString *)noteName;
 @end
 
-@interface PianoMusicTrack : NSObject
-@property(nonatomic, strong) NSArray<PianoMusicNote *> *musicNotes;
-@property(nonatomic, weak) id<PianoMusicTrackDelegate> delegate;
+@interface PianoTrack : NSObject
+@property(nonatomic, strong) NSArray<PianoNote *> *musicNotes;
+@property(nonatomic, weak) id<PianoTrackDelegate> delegate;
 
 - (void)play;
 - (void)pause;

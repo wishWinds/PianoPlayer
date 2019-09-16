@@ -8,11 +8,11 @@
 
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
-#import "PianoMusicPlayer.h"
+#import "PianoPlayer.h"
 #import "TouchKeyboard.h"
 
-@interface ViewController () <AVAudioPlayerDelegate, PianoMusicPlayerDelegate>
-@property(nonatomic, strong) PianoMusicPlayer *player;
+@interface ViewController () <AVAudioPlayerDelegate, PianoPlayerDelegate>
+@property(nonatomic, strong) PianoPlayer *player;
 @property (weak, nonatomic) IBOutlet UIView *keyboardWrapperView;
 
 @property(nonatomic, strong) TouchKeyboard *keyboardView;
@@ -30,7 +30,7 @@
     
     NSURL *musicJsonStrFileURL = [[NSBundle mainBundle] URLForResource:@"小星星" withExtension:@"json"];
     NSString *musicJsonStr = [NSString stringWithContentsOfURL:musicJsonStrFileURL encoding:NSUTF8StringEncoding error:nil];
-    self.player = [[PianoMusicPlayer alloc] initWithJsonStr:musicJsonStr];
+    self.player = [[PianoPlayer alloc] initWithJsonStr:musicJsonStr];
     self.player.delegate = self;
 }
 

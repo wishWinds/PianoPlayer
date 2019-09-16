@@ -1,5 +1,5 @@
 //
-//  UITouch+PianoMusicPlayer.h
+//  UITouch+PianoPlayer.h
 //  AudioDemo
 //
 //  Created by 舒鹏 on 10/9/2019.
@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PianoMusicNote.h"
+#import "PianoNote.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UITouch (PianoMusicPlayer)
+@interface UITouch (PianoPlayer)
 @property(nonatomic, strong) NSNumber *preTouchNoteIndex;
-@property(nonatomic, strong) PianoMusicNote *preNote;
+@property(nonatomic, strong) PianoNote *preNote;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE3A99FF232635EE00838ACE /* PianoMusicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3A99FE232635EE00838ACE /* PianoMusicModel.m */; };
-		FEA2AF8A23264420001CEFA7 /* PianoMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA2AF8923264420001CEFA7 /* PianoMusicPlayer.m */; };
+		FE3A99FF232635EE00838ACE /* PianoDocModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3A99FE232635EE00838ACE /* PianoDocModel.m */; };
+		FEA2AF8A23264420001CEFA7 /* PianoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA2AF8923264420001CEFA7 /* PianoPlayer.m */; };
 		FEA2AF9523264F55001CEFA7 /* E4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEA2AF8B23264F55001CEFA7 /* E4.mp3 */; };
 		FEA2AF9623264F55001CEFA7 /* D4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEA2AF8C23264F55001CEFA7 /* D4.mp3 */; };
 		FEA2AF9723264F55001CEFA7 /* Ds4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEA2AF8D23264F55001CEFA7 /* Ds4.mp3 */; };
@@ -20,7 +20,7 @@
 		FEA2AF9D23264F55001CEFA7 /* C4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEA2AF9323264F55001CEFA7 /* C4.mp3 */; };
 		FEA2AF9E23264F55001CEFA7 /* Gs4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEA2AF9423264F55001CEFA7 /* Gs4.mp3 */; };
 		FEA2AFA123264FC2001CEFA7 /* 小星星.json in Resources */ = {isa = PBXBuildFile; fileRef = FEA2AFA023264FC2001CEFA7 /* 小星星.json */; };
-		FEA2AFA423265335001CEFA7 /* PianoMusicTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA2AFA323265335001CEFA7 /* PianoMusicTrack.m */; };
+		FEA2AFA423265335001CEFA7 /* PianoTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA2AFA323265335001CEFA7 /* PianoTrack.m */; };
 		FEA2AFB1232667D6001CEFA7 /* C3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEA2AFA5232667D5001CEFA7 /* C3.mp3 */; };
 		FEA2AFB2232667D6001CEFA7 /* Cs3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEA2AFA6232667D6001CEFA7 /* Cs3.mp3 */; };
 		FEA2AFB3232667D6001CEFA7 /* G3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEA2AFA7232667D6001CEFA7 /* G3.mp3 */; };
@@ -36,7 +36,7 @@
 		FEA2AFBF232738AF001CEFA7 /* TouchKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA2AFBE232738AF001CEFA7 /* TouchKeyboard.m */; };
 		FEA2AFC123273B29001CEFA7 /* TouchKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEA2AFC023273B29001CEFA7 /* TouchKeyboard.xib */; };
 		FEA2AFC32327562A001CEFA7 /* 小星星2.json in Resources */ = {isa = PBXBuildFile; fileRef = FEA2AFC22327562A001CEFA7 /* 小星星2.json */; };
-		FEA2AFC92327641F001CEFA7 /* UITouch+PianoMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA2AFC82327641F001CEFA7 /* UITouch+PianoMusicPlayer.m */; };
+		FEA2AFC92327641F001CEFA7 /* UITouch+PianoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA2AFC82327641F001CEFA7 /* UITouch+PianoPlayer.m */; };
 		FEA3A0F22325E0FA00CB9DDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA3A0F12325E0FA00CB9DDD /* AppDelegate.m */; };
 		FEA3A0F52325E0FA00CB9DDD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA3A0F42325E0FA00CB9DDD /* ViewController.m */; };
 		FEA3A0F82325E0FA00CB9DDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA3A0F62325E0FA00CB9DDD /* Main.storyboard */; };
@@ -45,14 +45,14 @@
 		FEA3A1002325E0FB00CB9DDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA3A0FF2325E0FB00CB9DDD /* main.m */; };
 		FEA3A1082325E37300CB9DDD /* As4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEA3A1072325E37300CB9DDD /* As4.mp3 */; };
 		FEA3A10A2325E37700CB9DDD /* A4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEA3A1092325E37700CB9DDD /* A4.mp3 */; };
-		FEA3A1312326181200CB9DDD /* PianoMusicNote.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA3A1302326181200CB9DDD /* PianoMusicNote.m */; };
+		FEA3A1312326181200CB9DDD /* PianoNote.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA3A1302326181200CB9DDD /* PianoNote.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FE3A99FD232635EE00838ACE /* PianoMusicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PianoMusicModel.h; sourceTree = "<group>"; };
-		FE3A99FE232635EE00838ACE /* PianoMusicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PianoMusicModel.m; sourceTree = "<group>"; };
-		FEA2AF8823264420001CEFA7 /* PianoMusicPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PianoMusicPlayer.h; sourceTree = "<group>"; };
-		FEA2AF8923264420001CEFA7 /* PianoMusicPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PianoMusicPlayer.m; sourceTree = "<group>"; };
+		FE3A99FD232635EE00838ACE /* PianoDocModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PianoDocModel.h; sourceTree = "<group>"; };
+		FE3A99FE232635EE00838ACE /* PianoDocModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PianoDocModel.m; sourceTree = "<group>"; };
+		FEA2AF8823264420001CEFA7 /* PianoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PianoPlayer.h; sourceTree = "<group>"; };
+		FEA2AF8923264420001CEFA7 /* PianoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PianoPlayer.m; sourceTree = "<group>"; };
 		FEA2AF8B23264F55001CEFA7 /* E4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = E4.mp3; sourceTree = "<group>"; };
 		FEA2AF8C23264F55001CEFA7 /* D4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = D4.mp3; sourceTree = "<group>"; };
 		FEA2AF8D23264F55001CEFA7 /* Ds4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ds4.mp3; sourceTree = "<group>"; };
@@ -64,8 +64,8 @@
 		FEA2AF9323264F55001CEFA7 /* C4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = C4.mp3; sourceTree = "<group>"; };
 		FEA2AF9423264F55001CEFA7 /* Gs4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Gs4.mp3; sourceTree = "<group>"; };
 		FEA2AFA023264FC2001CEFA7 /* 小星星.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "小星星.json"; sourceTree = "<group>"; };
-		FEA2AFA223265335001CEFA7 /* PianoMusicTrack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PianoMusicTrack.h; sourceTree = "<group>"; };
-		FEA2AFA323265335001CEFA7 /* PianoMusicTrack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PianoMusicTrack.m; sourceTree = "<group>"; };
+		FEA2AFA223265335001CEFA7 /* PianoTrack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PianoTrack.h; sourceTree = "<group>"; };
+		FEA2AFA323265335001CEFA7 /* PianoTrack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PianoTrack.m; sourceTree = "<group>"; };
 		FEA2AFA5232667D5001CEFA7 /* C3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = C3.mp3; sourceTree = "<group>"; };
 		FEA2AFA6232667D6001CEFA7 /* Cs3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cs3.mp3; sourceTree = "<group>"; };
 		FEA2AFA7232667D6001CEFA7 /* G3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = G3.mp3; sourceTree = "<group>"; };
@@ -82,8 +82,8 @@
 		FEA2AFBE232738AF001CEFA7 /* TouchKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchKeyboard.m; sourceTree = "<group>"; };
 		FEA2AFC023273B29001CEFA7 /* TouchKeyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TouchKeyboard.xib; sourceTree = "<group>"; };
 		FEA2AFC22327562A001CEFA7 /* 小星星2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "小星星2.json"; sourceTree = "<group>"; };
-		FEA2AFC72327641F001CEFA7 /* UITouch+PianoMusicPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITouch+PianoMusicPlayer.h"; sourceTree = "<group>"; };
-		FEA2AFC82327641F001CEFA7 /* UITouch+PianoMusicPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITouch+PianoMusicPlayer.m"; sourceTree = "<group>"; };
+		FEA2AFC72327641F001CEFA7 /* UITouch+PianoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITouch+PianoPlayer.h"; sourceTree = "<group>"; };
+		FEA2AFC82327641F001CEFA7 /* UITouch+PianoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITouch+PianoPlayer.m"; sourceTree = "<group>"; };
 		FEA3A0ED2325E0FA00CB9DDD /* AudioDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA3A0F02325E0FA00CB9DDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FEA3A0F12325E0FA00CB9DDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -96,8 +96,8 @@
 		FEA3A0FF2325E0FB00CB9DDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FEA3A1072325E37300CB9DDD /* As4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = As4.mp3; sourceTree = "<group>"; };
 		FEA3A1092325E37700CB9DDD /* A4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = A4.mp3; sourceTree = "<group>"; };
-		FEA3A12F2326181200CB9DDD /* PianoMusicNote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PianoMusicNote.h; sourceTree = "<group>"; };
-		FEA3A1302326181200CB9DDD /* PianoMusicNote.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PianoMusicNote.m; sourceTree = "<group>"; };
+		FEA3A12F2326181200CB9DDD /* PianoNote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PianoNote.h; sourceTree = "<group>"; };
+		FEA3A1302326181200CB9DDD /* PianoNote.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PianoNote.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				FEA2AF9F23264FC2001CEFA7 /* songs */,
-				FEA3A135232618D100CB9DDD /* MusicPlayer */,
+				FEA3A135232618D100CB9DDD /* PianoPlayer */,
 				FEA3A0F02325E0FA00CB9DDD /* AppDelegate.h */,
 				FEA3A0F12325E0FA00CB9DDD /* AppDelegate.m */,
 				FEA3A0F32325E0FA00CB9DDD /* ViewController.h */,
@@ -188,22 +188,22 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		FEA3A135232618D100CB9DDD /* MusicPlayer */ = {
+		FEA3A135232618D100CB9DDD /* PianoPlayer */ = {
 			isa = PBXGroup;
 			children = (
 				FEA3A1062325E36B00CB9DDD /* Resource */,
-				FE3A99FD232635EE00838ACE /* PianoMusicModel.h */,
-				FE3A99FE232635EE00838ACE /* PianoMusicModel.m */,
-				FEA3A12F2326181200CB9DDD /* PianoMusicNote.h */,
-				FEA3A1302326181200CB9DDD /* PianoMusicNote.m */,
-				FEA2AFA223265335001CEFA7 /* PianoMusicTrack.h */,
-				FEA2AFA323265335001CEFA7 /* PianoMusicTrack.m */,
-				FEA2AF8823264420001CEFA7 /* PianoMusicPlayer.h */,
-				FEA2AF8923264420001CEFA7 /* PianoMusicPlayer.m */,
-				FEA2AFC72327641F001CEFA7 /* UITouch+PianoMusicPlayer.h */,
-				FEA2AFC82327641F001CEFA7 /* UITouch+PianoMusicPlayer.m */,
+				FE3A99FD232635EE00838ACE /* PianoDocModel.h */,
+				FE3A99FE232635EE00838ACE /* PianoDocModel.m */,
+				FEA3A12F2326181200CB9DDD /* PianoNote.h */,
+				FEA3A1302326181200CB9DDD /* PianoNote.m */,
+				FEA2AFA223265335001CEFA7 /* PianoTrack.h */,
+				FEA2AFA323265335001CEFA7 /* PianoTrack.m */,
+				FEA2AF8823264420001CEFA7 /* PianoPlayer.h */,
+				FEA2AF8923264420001CEFA7 /* PianoPlayer.m */,
+				FEA2AFC72327641F001CEFA7 /* UITouch+PianoPlayer.h */,
+				FEA2AFC82327641F001CEFA7 /* UITouch+PianoPlayer.m */,
 			);
-			path = MusicPlayer;
+			path = PianoPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,15 +303,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEA2AFA423265335001CEFA7 /* PianoMusicTrack.m in Sources */,
-				FE3A99FF232635EE00838ACE /* PianoMusicModel.m in Sources */,
+				FEA2AFA423265335001CEFA7 /* PianoTrack.m in Sources */,
+				FE3A99FF232635EE00838ACE /* PianoDocModel.m in Sources */,
 				FEA3A0F52325E0FA00CB9DDD /* ViewController.m in Sources */,
-				FEA2AF8A23264420001CEFA7 /* PianoMusicPlayer.m in Sources */,
-				FEA3A1312326181200CB9DDD /* PianoMusicNote.m in Sources */,
+				FEA2AF8A23264420001CEFA7 /* PianoPlayer.m in Sources */,
+				FEA3A1312326181200CB9DDD /* PianoNote.m in Sources */,
 				FEA3A1002325E0FB00CB9DDD /* main.m in Sources */,
 				FEA2AFBF232738AF001CEFA7 /* TouchKeyboard.m in Sources */,
 				FEA3A0F22325E0FA00CB9DDD /* AppDelegate.m in Sources */,
-				FEA2AFC92327641F001CEFA7 /* UITouch+PianoMusicPlayer.m in Sources */,
+				FEA2AFC92327641F001CEFA7 /* UITouch+PianoPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

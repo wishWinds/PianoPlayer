@@ -1,19 +1,19 @@
 //
-//  PianoMusicTrack.m
+//  PianoTrack.m
 //  AudioDemo
 //
 //  Created by 舒鹏 on 9/9/2019.
 //  Copyright © 2019 舒鹏. All rights reserved.
 //
 
-#import "PianoMusicTrack.h"
+#import "PianoTrack.h"
 
-@interface PianoMusicTrack ()
+@interface PianoTrack ()
 @property(nonatomic, assign) NSInteger playIndex;
 @property(nonatomic, strong) NSTimer *timer;
 @end
 
-@implementation PianoMusicTrack
+@implementation PianoTrack
 
 - (void)play {
     [self next];
@@ -34,7 +34,7 @@
 - (void)next {
     // post pre note play end msg
     if (self.playIndex != 0) {
-        PianoMusicNote *preNote = self.musicNotes[self.playIndex - 1];
+        PianoNote *preNote = self.musicNotes[self.playIndex - 1];
 //        [preNote stop];
         if ([self.delegate respondsToSelector:@selector(pianoMusicTrackDidEndPlayNote:)]) {
             [self.delegate pianoMusicTrackDidEndPlayNote:preNote.name];
@@ -42,7 +42,7 @@
     }
 
     // play current note
-    PianoMusicNote *note = self.musicNotes[self.playIndex];
+    PianoNote *note = self.musicNotes[self.playIndex];
     [note play];
     if ([self.delegate respondsToSelector:@selector(pianoMusicTrackDidPlayNote:)]) {
         [self.delegate pianoMusicTrackDidPlayNote:note.name];

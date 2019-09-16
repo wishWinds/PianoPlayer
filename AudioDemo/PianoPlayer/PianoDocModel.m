@@ -1,14 +1,14 @@
 //
-//  PianoMusicModel.m
+//  PianoDocModel.m
 //  AudioDemo
 //
 //  Created by 舒鹏 on 9/9/2019.
 //  Copyright © 2019 舒鹏. All rights reserved.
 //
 
-#import "PianoMusicModel.h"
+#import "PianoDocModel.h"
 
-@implementation PianoMusicModel
+@implementation PianoDocModel
 
 - (id)initWithJsonStr:(NSString *)str {
     self = [super init];
@@ -23,7 +23,7 @@
         __block NSMutableArray *musicTracks = [NSMutableArray array];
         [json[@"tracks"] enumerateObjectsUsingBlock:^(NSArray *_Nonnull trackJson, NSUInteger idx, BOOL *_Nonnull stop) {
             NSMutableArray *trackMusicNotes = [NSMutableArray array];
-            PianoMusicTrack *track = [[PianoMusicTrack alloc] init];
+            PianoTrack *track = [[PianoTrack alloc] init];
             [musicTracks addObject:track];
 
             [trackJson enumerateObjectsUsingBlock:^(NSString *_Nonnull noteStr, NSUInteger idx, BOOL *_Nonnull stop) {
@@ -40,7 +40,7 @@
                 durationStr = [durationStr substringToIndex:durationStr.length - 1];
                 NSTimeInterval duration = [durationStr floatValue] * [self interval];
 
-                PianoMusicNote *note = [[PianoMusicNote alloc] initWithName:noteName duration:duration];
+                PianoNote *note = [[PianoNote alloc] initWithName:noteName duration:duration];
                 [trackMusicNotes addObject:note];
             }];
             

@@ -1,5 +1,5 @@
 //
-//  PianoMusicModel.h
+//  PianoDocModel.h
 //  AudioDemo
 //
 //  Created by 舒鹏 on 9/9/2019.
@@ -7,16 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PianoMusicTrack.h"
+#import "PianoTrack.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PianoMusicModel : NSObject
+@interface PianoDocModel : NSObject
 @property(nonatomic, strong) NSString *name;
 @property(nonatomic, assign) NSInteger bpm;
 @property(nonatomic, strong) NSString *jiepai;
 @property(nonatomic, strong) NSString *changming;
-@property(nonatomic, strong) NSArray<PianoMusicTrack *> *musicTracks;
+@property(nonatomic, strong) NSArray<PianoTrack *> *musicTracks;
 
 
 - (id)initWithJsonStr:(NSString *)str;

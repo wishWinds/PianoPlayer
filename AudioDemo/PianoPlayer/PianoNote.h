@@ -1,5 +1,5 @@
 //
-//  PianoMusicNote.h
+//  PianoNote.h
 //  AudioDemo
 //
 //  Created by 舒鹏 on 9/9/2019.
@@ -8,19 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
-@class PianoMusicNote;
+@class PianoNote;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol PianoMusicNoteDelegate <NSObject>
-- (void)pianoMusicNoteDidPlayEnd:(PianoMusicNote *)note;
+@protocol PianoNoteDelegate <NSObject>
+- (void)pianoMusicNoteDidPlayEnd:(PianoNote *)note;
 @end
 
-@interface PianoMusicNote : NSObject
+@interface PianoNote : NSObject
 @property(nonatomic, strong, readonly) NSString *name;
 @property(nonatomic, assign, readonly) NSTimeInterval duration;
 
-@property(nonatomic, weak) id<PianoMusicNoteDelegate> delegate;
+@property(nonatomic, weak) id<PianoNoteDelegate> delegate;
 
 - (id)initWithName:(NSString *)name duration:(NSTimeInterval)duration;
 

@@ -1,21 +1,21 @@
 //
-//  PianoMusicNote.m
+//  PianoNote.m
 //  AudioDemo
 //
 //  Created by 舒鹏 on 9/9/2019.
 //  Copyright © 2019 舒鹏. All rights reserved.
 //
 
-#import "PianoMusicNote.h"
+#import "PianoNote.h"
 #import <AVFoundation/AVFoundation.h>
 
 
-@interface PianoMusicNote () <AVAudioPlayerDelegate>
+@interface PianoNote () <AVAudioPlayerDelegate>
 @property(nonatomic, strong) AVAudioPlayer *player;
 @property(nonatomic, strong) NSTimer *timer;
 @end
 
-@implementation PianoMusicNote
+@implementation PianoNote
 - (id)initWithName:(NSString *)name duration:(NSTimeInterval)duration {
     self = [super init];
     if (self) {

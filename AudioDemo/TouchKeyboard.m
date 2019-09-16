@@ -7,10 +7,10 @@
 //
 
 #import "TouchKeyboard.h"
-#import "PianoMusicNote.h"
-#import "UITouch+PianoMusicPlayer.h"
+#import "PianoNote.h"
+#import "UITouch+PianoPlayer.h"
 
-@interface TouchKeyboard () <PianoMusicNoteDelegate>
+@interface TouchKeyboard () <PianoNoteDelegate>
 @property(weak, nonatomic) IBOutlet UIStackView *noteStackView;
 @property(nonatomic, strong) NSArray *noteNames;
 @property(nonatomic, strong) NSMutableArray *notes;
@@ -60,7 +60,7 @@
         NSInteger index = [self indexForTouch:obj];
 
         NSString *noteName = self.noteNames[index];
-        PianoMusicNote *note = [[PianoMusicNote alloc] initWithName:noteName duration:0];
+        PianoNote *note = [[PianoNote alloc] initWithName:noteName duration:0];
         note.delegate = self;
         [note play];
         [self.notes addObject:note];
@@ -88,7 +88,7 @@
             [self untouchNoteName:obj.preNote.name];
 
             NSString *noteName = self.noteNames[index];
-            PianoMusicNote *note = [[PianoMusicNote alloc] initWithName:noteName duration:0];
+            PianoNote *note = [[PianoNote alloc] initWithName:noteName duration:0];
             note.delegate = self;
             [note play];
             [self.notes addObject:note];
@@ -127,7 +127,7 @@
     view.backgroundColor = [UIColor whiteColor];
 }
 
-- (void)pianoMusicNoteDidPlayEnd:(PianoMusicNote *)note {
+- (void)pianoMusicNoteDidPlayEnd:(PianoNote *)note {
 //    [self untouchNoteName:note.name];
     [self.notes removeObject:note];
 }

@@ -1,5 +1,5 @@
 //
-//  PianoMusicPlayer.h
+//  PianoPlayer.h
 //  AudioDemo
 //
 //  Created by 舒鹏 on 9/9/2019.
@@ -7,19 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PianoMusicModel.h"
+#import "PianoDocModel.h"
 
 
-@protocol PianoMusicPlayerDelegate <PianoMusicTrackDelegate>
+@protocol PianoPlayerDelegate <PianoTrackDelegate>
 @end
 
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PianoMusicPlayer : NSObject
-@property(nonatomic, strong, readonly) PianoMusicModel *musicModel;
+@interface PianoPlayer : NSObject
+@property(nonatomic, strong, readonly) PianoDocModel *musicModel;
 
-@property(nonatomic, weak) id<PianoMusicPlayerDelegate> delegate;
+@property(nonatomic, weak) id<PianoPlayerDelegate> delegate;
 
 - (id)initWithJsonStr:(NSString *)jsonStr;
 
